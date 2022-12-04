@@ -110,7 +110,7 @@ public class MainPage {
     public String getAnswerText(By answer) {
         return driver.findElement(answer).getText();
     }
-    //получить текст ответа на вопрос
+    //посмотреть текст ответа на вопрос
 
     public void clickOrderButton(By orderButton) {
         driver.findElement(orderButton).click();

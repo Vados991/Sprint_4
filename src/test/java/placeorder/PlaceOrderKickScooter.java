@@ -76,7 +76,7 @@ public class PlaceOrderKickScooter {
         orderPageAboutRent.clickFinalOrderButton();
         orderPageAboutRent.confirmOrder();
         orderPageAboutRent.checkOrderComplete();
-        //раздел Про аренду
+        //раздел про время аренды
     }
     @After
     public void tearDown() {

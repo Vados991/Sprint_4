@@ -62,7 +62,7 @@ public class DropDownChecklist {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickQuestion(question);
         mainPage.getAnswerText(answer);
-        MatcherAssert.assertThat(mainPage.getAnswerText(answer), is(answerText));
+        MatcherAssert.assertThat(mainPage.getAnswerText(answer), is(answerText));  // списка вопросов
     }
 
     @After

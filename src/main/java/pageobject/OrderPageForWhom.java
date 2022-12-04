@@ -32,7 +32,7 @@ public class OrderPageForWhom {
         driver.findElement(surnameField).sendKeys(surname); //ввести фамилию
     }
     public void enterAddress(String address) {
-        driver.findElement(addressField).sendKeys(address); //ввести адрес
+        driver.findElement(addressField).sendKeys(address); //ввести адрес доставки
     }
     public void clickMetroStation() {
         driver.findElement(metroField ).click();
