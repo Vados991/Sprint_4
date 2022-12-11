@@ -28,8 +28,8 @@ public class DropDownChecklist {
         DropDownChecklist.answerText = answerText;
     }
 
-    @Parameterized.Parameters
-    public static Object[][] getCredentials() {     //параметризация
+    @Parameterized.Parameters  //параметризация
+    public static Object[][] getCredentials() {
         return new Object[][]{
                 {MainPage.questionFirst, MainPage.answerFirst, MainPage.answerFirstText},
                 {MainPage.questionSecond, MainPage.answerSecond, MainPage.answerSecondText},

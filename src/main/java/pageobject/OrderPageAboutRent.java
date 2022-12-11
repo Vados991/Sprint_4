@@ -9,7 +9,7 @@ public class OrderPageAboutRent {
     private final By dateField = By.xpath(".//input[contains(@placeholder, 'Когда привезти самокат')]");
     //поле Когда привезти самокат
     private final By choosingDate = By.xpath(".//div[contains(@class, 'react-datepicker__day--selected')]");
-    //выбор даты когда привезти самокат из календаря
+    //выбор даты когда вернуть самокат
     private final By rentField = By.xpath(".//div[@class='Dropdown-placeholder']");
     //поле с выпадающим списком со сроком аренды самоката
     private final By choosingRentalPeriod = By.xpath(".//div[text()='сутки']");

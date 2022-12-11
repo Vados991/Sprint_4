@@ -26,11 +26,11 @@ public class OrderPageForWhom {
     }
 
     public void enterName(String name) {
-        driver.findElement(nameField).sendKeys(name); //ввести имя
+        driver.findElement(nameField).sendKeys(name); //ввести имя в поле
     }
 
     public void enterSurname(String surname) {
-        driver.findElement(surnameField).sendKeys(surname); //ввести фамилию
+        driver.findElement(surnameField).sendKeys(surname); //ввести фамилию в поле
     }
 
     public void enterAddress(String address) {

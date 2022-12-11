@@ -9,9 +9,9 @@ public class MainPage {
     private final String urlHomePage = "https://qa-scooter.praktikum-services.ru/";
     // url главной страницы
     public static By orderButtonAbove = By.xpath(".//button[@class='Button_Button__ra12g']");
-    // кнопка Заказать сверху
+    // кнопка Заказать в шапке сайта
     public static By orderButtonCenter = By.xpath(".//button[contains(@class, 'Button_Middle__1CSJM')]");
-    // кнопка заказать по центру
+    // кнопка заказать по центру сайта
     private final By questionImportant = By.xpath(".//div[text()='Вопросы о важном']");
     // Заголовок Вопросы о важном
     private final By cookieButton = By.id("rcc-confirm-button");  // кнопка с куки

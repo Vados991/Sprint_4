@@ -38,7 +38,7 @@ public class PlaceOrderKickScooter {
         PlaceOrderKickScooter.comment = comment;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters // параметризация
     public static Object[][] getCredentials() {
         return new Object[][]{
                 {orderButtonAbove, "Вадим", "Черкасов", "В парк Горького", "+79999132223", "03.12.2022", "Комментарий"},
