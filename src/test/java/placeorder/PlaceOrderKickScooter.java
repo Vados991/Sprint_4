@@ -29,24 +29,25 @@ public class PlaceOrderKickScooter {
     private static String comment;
 
     public PlaceOrderKickScooter(By orderButton, String name, String surname, String address, String phoneNumber, String dayWhatIWant, String comment) {
-        this.orderButton = orderButton;
-        this.name = name;
-        this.surname = surname;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-        this.dayWhatIWant = dayWhatIWant;
-        this.comment = comment;
+        PlaceOrderKickScooter.orderButton = orderButton;
+        PlaceOrderKickScooter.name = name;
+        PlaceOrderKickScooter.surname = surname;
+        PlaceOrderKickScooter.address = address;
+        PlaceOrderKickScooter.phoneNumber = phoneNumber;
+        PlaceOrderKickScooter.dayWhatIWant = dayWhatIWant;
+        PlaceOrderKickScooter.comment = comment;
     }
 
     @Parameterized.Parameters
-    public static Object [][] getCredentials(){
-        return new Object[][] {
-                {orderButtonAbove, "Вадим", "Черкасов", "В парк Горького", "+79999132223", "03.12.2022", "Комментарий" },
+    public static Object[][] getCredentials() {
+        return new Object[][]{
+                {orderButtonAbove, "Вадим", "Черкасов", "В парк Горького", "+79999132223", "03.12.2022", "Комментарий"},
                 {orderButtonCenter, "Ахмед", "Панкратов", "Северная улица", "88005553535", "02.12.2022", "Комментарий 2"}
         };
     }
+
     @Before
-    public void setUp(){
+    public void setUp() {
         driver = new ChromeDriver();
         //driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -54,6 +55,7 @@ public class PlaceOrderKickScooter {
         mainPage.openMainPage();
         mainPage.clickCookie();
     }
+
     @Test
     public void mainValidDataIsSuccess() {
         MainPage mainPage = new MainPage(driver);
@@ -78,9 +80,9 @@ public class PlaceOrderKickScooter {
         orderPageAboutRent.checkOrderComplete();
         //раздел про время аренды
     }
+
     @After
     public void tearDown() {
         driver.quit();
     }
-
 }

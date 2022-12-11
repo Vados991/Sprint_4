@@ -17,7 +17,6 @@ import static org.hamcrest.core.Is.is;
 
 @RunWith(Parameterized.class)
 public class DropDownChecklist {
-
     private WebDriver driver;
     private static By question;
     private static By answer;
@@ -25,15 +24,15 @@ public class DropDownChecklist {
 
     //конструктор класса
     public DropDownChecklist(By question, By answer, String answerText) {
-        this.question = question;
-        this.answer = answer;
-        this.answerText = answerText;
+        DropDownChecklist.question = question;
+        DropDownChecklist.answer = answer;
+        DropDownChecklist.answerText = answerText;
     }
 
     //параметризация
     @Parameterized.Parameters
-    public static Object[][] getCredentials(){
-        return new Object[][] {
+    public static Object[][] getCredentials() {
+        return new Object[][]{
                 {MainPage.questionFirst, MainPage.answerFirst, MainPage.answerFirstText},
                 {MainPage.questionSecond, MainPage.answerSecond, MainPage.answerSecondText},
                 {MainPage.questionThird, MainPage.answerThird, MainPage.answerThirdText},
@@ -43,7 +42,6 @@ public class DropDownChecklist {
                 {MainPage.questionSeven, MainPage.answerSeven, MainPage.answerSevenText},
                 {MainPage.questionEight, MainPage.answerEight, MainPage.answerEightText}
         };
-
     }
 
     @Before
@@ -69,6 +67,4 @@ public class DropDownChecklist {
     public void tearDown() {
         driver.quit();
     }
-
-
 }

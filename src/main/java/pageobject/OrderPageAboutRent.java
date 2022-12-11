@@ -4,37 +4,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class OrderPageAboutRent {
-
     // url страницы с формой Для кого самокат
     //private final String urlHomePage = "https://qa-scooter.praktikum-services.ru/order";
-
     private final By dateField = By.xpath(".//input[contains(@placeholder, 'Когда привезти самокат')]");
     //поле Когда привезти самокат
-
     private final By choosingDate = By.xpath(".//div[contains(@class, 'react-datepicker__day--selected')]");
     //выбор даты когда привезти самокат из календаря
-
     private final By rentField = By.xpath(".//div[@class='Dropdown-placeholder']");
     //поле с выпадающим списком со сроком аренды самоката
-
     private final By choosingRentalPeriod = By.xpath(".//div[text()='сутки']");
     //выбор периода аренды из списка
-
     private final By colorOfScooter = By.id("black"); //выбор черного цвета
-
     private final By commentField = By.xpath(".//input[contains(@placeholder, 'Комментарий для курьера')]");
     //поле с комментарием
-
     private final By finalOrderButton = By.xpath(".//div[3]/button[text()='Заказать']");
     //финальная кнопка заказать
-
     private final By yesOrderButton = By.xpath(".//button[text()='Да']");
     //Всплывающее окно хотите оформить заказ? Кнопка Да
-
     private final By notificationOfSuccessfulOrder = By.xpath(".//div[contains(text(), 'Заказ оформлен')]");
     //сообщение об успешном оформлении заказа
-
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public OrderPageAboutRent(WebDriver driver) {
         this.driver = driver;
@@ -69,5 +58,4 @@ public class OrderPageAboutRent {
     public void checkOrderComplete() {
         driver.findElement(notificationOfSuccessfulOrder).isDisplayed(); //сообщение об успешном заказе
     }
-
 }
