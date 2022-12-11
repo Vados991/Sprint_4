@@ -22,16 +22,14 @@ public class DropDownChecklist {
     private static By answer;
     private static String answerText;
 
-    //конструктор класса
-    public DropDownChecklist(By question, By answer, String answerText) {
+    public DropDownChecklist(By question, By answer, String answerText) { //конструктор класса
         DropDownChecklist.question = question;
         DropDownChecklist.answer = answer;
         DropDownChecklist.answerText = answerText;
     }
 
-    //параметризация
     @Parameterized.Parameters
-    public static Object[][] getCredentials() {
+    public static Object[][] getCredentials() {     //параметризация
         return new Object[][]{
                 {MainPage.questionFirst, MainPage.answerFirst, MainPage.answerFirstText},
                 {MainPage.questionSecond, MainPage.answerSecond, MainPage.answerSecondText},

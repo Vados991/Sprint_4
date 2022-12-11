@@ -44,7 +44,7 @@ public class OrderPageAboutRent {
     }
 
     public void writeComment(String comment) {
-        driver.findElement(commentField).sendKeys(comment); // коммент по желанию
+        driver.findElement(commentField).sendKeys(comment); // комментарий по желанию
     }
 
     public void clickFinalOrderButton() {

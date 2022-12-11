@@ -34,7 +34,7 @@ public class OrderPageForWhom {
     }
 
     public void enterAddress(String address) {
-        driver.findElement(addressField).sendKeys(address); //ввести адрес доставки
+        driver.findElement(addressField).sendKeys(address); //заполнить адрес доставки
     }
 
     public void clickMetroStation() {

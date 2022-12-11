@@ -16,7 +16,7 @@ public class MainPage {
     // Заголовок Вопросы о важном
     private final By cookieButton = By.id("rcc-confirm-button");  // кнопка с куки
 
-    //------------Вопросы------------------------------------------
+    //------------Вопросы-----------------------------------------
     public static By questionFirst = By.id("accordion__heading-0");
     //вопрос №1 Сколько это стоит? И как оплатить?
     public static By questionSecond = By.id("accordion__heading-1");
@@ -34,7 +34,7 @@ public class MainPage {
     public static By questionEight = By.id("accordion__heading-7");
     //вопрос №8 Я живу за МКАДом, привезёте?
 
-    //------------Ответы на вопросы -----------------------------------
+    //------------Ответы на вопросы ----------------------------------
     public static By answerFirst = By.id("accordion__panel-0");//Ответ на вопрос №1
     public static By answerSecond = By.id("accordion__panel-1"); //Ответ на вопрос №2
     public static By answerThird = By.id("accordion__panel-2");  //Ответ на вопрос №3
@@ -44,7 +44,7 @@ public class MainPage {
     public static By answerSeven = By.id("accordion__panel-6"); //Ответ на вопрос №7
     public static By answerEight = By.id("accordion__panel-7"); //Ответ на вопрос №8
 
-    //-----------Текст ответов на вопросы-------------------------------------
+    //-----------Текст ответов на вопросы------------------------------------
     public static String answerFirstText = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
     //Текст ответа на вопрос №1
     public static String answerSecondText = "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";

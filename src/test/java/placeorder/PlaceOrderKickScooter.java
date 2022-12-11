@@ -78,7 +78,7 @@ public class PlaceOrderKickScooter {
         orderPageAboutRent.clickFinalOrderButton();
         orderPageAboutRent.confirmOrder();
         orderPageAboutRent.checkOrderComplete();
-        //раздел про время аренды
+        //раздел про время аренды самоката
     }
 
     @After
