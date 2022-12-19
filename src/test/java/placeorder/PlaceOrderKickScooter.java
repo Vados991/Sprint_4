@@ -52,7 +52,7 @@ public class PlaceOrderKickScooter {
         //driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         MainPage mainPage = new MainPage(driver);
-        mainPage.openMainPage();
+        mainPage.openSite();
         mainPage.clickCookie();
     }
 
